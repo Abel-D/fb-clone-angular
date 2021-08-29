@@ -6,10 +6,12 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "tailwind": "postcss styles.scss -o build/styles.scss"
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-webpack": "^0.1202.2",
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
@@ -18,8 +20,16 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "autoprefixer": "^10.3.2",
+    "chokidar": "^3.5.2",
+    "glob-parent": "^5.1.2",
+    "postcss-cli": "^8.3.1",
+    "primeicons": "^4.1.0",
+    "primeng": "^12.1.0",
     "rxjs": "~6.6.0",
+    "tailwindcss": "^2.2.7",
     "tslib": "^2.3.0",
+    "webpack-dev-server": "^3.11.2",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
